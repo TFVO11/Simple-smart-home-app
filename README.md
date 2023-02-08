@@ -10,5 +10,15 @@ simple smart app은 이름 그대로 집을 관리할 수 있는 앱을 만드�
 
 ### :bookmark_tabs:사용되는 라이브러리
 React이다.   
-:computer:React 공식 홈페이지 주소 : https://ko.reactjs.org/docs/getting-started.html
+:computer:React 공식 홈페이지 주소 : https://ko.reactjs.org/docs/getting-started.htmlㅛ
+
+
+### 기능 나열
+Light:
+ light force controler
+ visible button
+temperature :
+ header of time (now, hope temperature)
+ gauge
+ decision button
 
