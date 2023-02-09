@@ -1,15 +1,25 @@
 import { Fragment } from "react";
+import { useState } from "react";
 
-import Kitchen from "./Kitchen";
-import Power from "./Power";
+import DropDown from "../UI/Dropdown";
 
 const Header = () => {
+    const [visibility, setVisibility] = useState(false);
+
+    const clickHandler = setVisibility(!visibility)
 
     return (
         
         <Fragment>
-            <Kitchen />
-            <Power />
+            <button onClick={clickHandler}>
+                Header
+            </button>
+            <DropDown dropDownVisibility={visibility}>
+                <ul>
+                    <li>Kitchen</li>
+                    <li>Power</li>
+                </ul>
+            </DropDown>
         </Fragment>  
         
     )
