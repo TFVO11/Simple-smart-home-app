@@ -1,21 +1,21 @@
 import { Fragment } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Header from "./components/Header/Header";
-import Nav from "./components/Navigation/Nav";
-import contentsBox from "./components/contents/contentsBox";
-
+import KitchenContentsBox from "./components/contents/KitchenContentsBox";
+import PowerContentsBox from "./components/contents/PowerContentsBox";
 
 
 const App = () => {
     return (
-        <BrowserRouter>
-        <Fragment>
-            <Header />
-            <Nav />
-            <contentsBox />
-        </Fragment>
-        </BrowserRouter>
+
+    <BrowserRouter>
+       <Header/>
+       <Switch>
+        <Route exact path='/KitchenContentsBox' element={<KitchenContentsBox/>} />
+        <Route exact path='/PowerContentsBox' element={<PowerContentsBox/>} />
+       </Switch>
+    </BrowserRouter>
     )
 
 };
