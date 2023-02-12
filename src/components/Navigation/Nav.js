@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 
 import navigateLight from "./navigateLight";
 import navigateTemperature from "./navigateTemperature";
@@ -9,11 +10,11 @@ const Nav = () => {
     
 return (
 <nav>
-    <a href="/navigateLight">Light</a>
-    <a href="/navigateTemperature">Temperrature</a>
-    <a href="/navigateOven">Oven</a>
-    <a href="/navigateRefrigerator">Refrigerator</a>
-    <a href="/navigateWater">Water</a>
+    <Link to="/navigateLight">Light</Link>
+    <Link to="/navigateTemperature">Temperrature</Link>
+    <Link to="/navigateOven">Oven</Link>
+    <Link to="/navigateRefrigerator">Refrigerator</Link>
+    <Link to="/navigateWater">Water</Link>
 </nav>
 )
 }
