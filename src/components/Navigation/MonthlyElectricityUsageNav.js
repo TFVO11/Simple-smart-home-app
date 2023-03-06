@@ -19,7 +19,7 @@ const powerNavItems = [
     },
 ];
 
-const PowerNav = () => {
+const MonthlyElectricityUsageNav = () => {
     return (
         <Wrapper>
             {powerNavItems.map((item) => {
@@ -35,4 +35,4 @@ const PowerNav = () => {
     );
 };
 
-export default PowerNav;
+export default MonthlyElectricityUsageNav;
