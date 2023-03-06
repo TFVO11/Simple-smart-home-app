@@ -8,9 +8,9 @@ const Light = () => {
 
 
     return (
-        <Card>
+        <div>
             <h3>This is Light page</h3>
-        </Card>
+        </div>
     )
     }
 

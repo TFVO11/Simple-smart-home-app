@@ -4,9 +4,9 @@ import Card from '../UI/Card';
 
 const temperature = () => {
 return (
-    <Card>
+    <div>
         <h3>This is Temperature page</h3>
-    </Card>
+    </div>
 )
 }
 export default temperature;
