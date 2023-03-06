@@ -1,12 +1,21 @@
+import Wrapper from "../Helpers/Wrapper";
+import classes from './KitchenNav.module.css'
+
 const KitchenNav = () => {
     return (
-    <nav>
-        <Link to='/Light'>Light</Link>
-        <Link to='/temperature'>Temperature</Link>
-        <Link to='/refrigerator'>Refrigerator</Link>
-        <Link to='/oven'>Oven</Link>
-        <Link to='/water'>Water</Link>
-    </nav>
+        <ul className={classes.kitchennav}>
+        <Wrapper>
+<li>
+    <a href="/KitchenContentsBox/temperature">temperature</a>
+</li>
+<li>
+    <a href='/KitchenContentsBox/light'>Light</a>
+</li>
+<li>
+    <a href='/KitchenContentsBox/oven'>oven</a>
+</li>
+</Wrapper>
+</ul>
     )
 
 }

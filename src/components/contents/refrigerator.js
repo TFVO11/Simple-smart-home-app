@@ -4,9 +4,9 @@ import Card from '../UI/Card';
 
 const refrigerator = () => {
 return (
-    <Card>
+    <div>
         <h3>This is Refrigerator page</h3>
-    </Card>
+    </div>
 )
 }
 export default refrigerator;

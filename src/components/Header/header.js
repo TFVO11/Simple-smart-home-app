@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from 'react-router-dom';
 
 import DropDown from "../UI/Dropdown";
+import classes from './Header.module.css';
 
 const Header = () => {
     const [visibility, setVisibility] = useState(false);
@@ -14,17 +15,17 @@ const Header = () => {
 
     return (
         
-        <Fragment>
-            <button onClick={clickHandler}>
+        <div className={classes.headerbox} >
+            <button className={classes.Button} onClick={clickHandler}>
                 Header
             </button>
             <DropDown dropDownVisibility={visibility}>
-                <ul>
-                    <li><Link to='/KitchenContentsBox'>Kitchen</Link></li>
-                    <li><Link to='/PowerContentsBox'>Power</Link></li>
+                <ul className={classes.headerlistbox}>
+                    <li><a href='/KitchenContentsBox/*'>Kitchen</a></li>
+                    <li><a href='/PowerContentsBox/*'>Power</a></li>
                 </ul>
             </DropDown>
-        </Fragment>  
+        </div>  
         
     )
 }

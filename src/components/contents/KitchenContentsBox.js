@@ -2,23 +2,27 @@ import { Switch, Route } from 'react-router-dom';
 
 import Light from './Light';
 import Oven from './oven';
-import Refrigerator from './refrigerator';
 import Temperature from './temperature';
-import Water from './water';
 import Card from '../UI/Card';
+import KitchenNav from '../Navigation/KitchenNav';
+import Wrapper from '../Helpers/Wrapper';
+import classes from './KitchenContentsBox.module.css';
 
 const KitchencontentsBox = () => {
 
 return  (
-    <Card>
+    <div className={classes.kitchencontentsbox}>
+        <div>
+        <KitchenNav />
+        </div>
+        <div>
         <Switch>
-            <Route className="light" exact path="/Light" element={<Light/>} />
-            <Route className="temperature" path="/temperature" element={<Temperature/>}/>
-            <Route className="refrigerator" path="/refrigerator" element={<Refrigerator />}/>
-            <Route className="oven" path="/oven" element={<Oven />} />
-            <Route className="water" path="/water" element={<Water />}/>
+            <Route path="/KitchenContentsBox/light" component={Light} />
+            <Route exact path="/KitchenContentsBox/temperature" component={Temperature}/>    
+            <Route path="/KitchenContentsBox/oven" component={Oven} />
         </Switch>
-    </Card>
+        </div>
+    </div>
 
 )
 }
