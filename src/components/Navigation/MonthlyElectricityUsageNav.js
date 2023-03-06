@@ -1,4 +1,4 @@
-import Wrapper from "../Helpers/Wrapper";
+import Wrapper from "../../layouts/ContentLayout/Wrapper";
 
 const powerNavItems = [
     {

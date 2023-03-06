@@ -1,5 +1,5 @@
 import { Switch, Route } from "react-router-dom";
-import Wrapper from "../Helpers/Wrapper";
+import Wrapper from "../../layouts/ContentLayout/Wrapper";
 
 import PowerNav from "../Navigation/MonthlyElectricityUsageNav";
 import Card from "../UI/Card";
