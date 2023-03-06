@@ -1,10 +1,10 @@
 import { Switch, Route } from "react-router-dom";
 
-import Light from "./Light";
-import Oven from "./oven";
-import Temperature from "./temperature";
-import Card from "../UI/Card";
-import KitchenNav from "../Navigation/KitchenNav";
+import Light from "../../components/contents/Light";
+import Oven from "../../components/contents/oven";
+import Temperature from "../../components/contents/temperature";
+import Card from "../../components/UI/Card";
+import KitchenNav from "../../components/Navigation/KitchenNav";
 import Wrapper from "../../layouts/ContentLayout/Wrapper";
 import classes from "./KitchenContentsBox.module.css";
 

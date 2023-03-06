@@ -1,20 +1,20 @@
 import { Switch, Route } from "react-router-dom";
 import Wrapper from "../../layouts/ContentLayout/Wrapper";
 
-import PowerNav from "../Navigation/MonthlyElectricityUsageNav";
-import Card from "../UI/Card";
-import January from "../month/January";
-import Febuary from "../month/February";
-import March from "../month/March";
-import Aprill from "../month/Aprill";
-import May from "../month/May";
-import June from "../month/June";
-import July from "../month/July";
-import August from "../month/August";
-import Septmeber from "../month/September";
-import October from "../month/October";
-import November from "../month/November";
-import December from "../month/December";
+import PowerNav from "../../components/Navigation/MonthlyElectricityUsageNav";
+import Card from "../../components/UI/Card";
+import January from "../../components/month/January";
+import Febuary from "../../components/month/February";
+import March from "../../components/month/March";
+import Aprill from "../../components/month/Aprill";
+import May from "../../components/month/May";
+import June from "../../components/month/June";
+import July from "../../components/month/July";
+import August from "../../components/month/August";
+import Septmeber from "../../components/month/September";
+import October from "../../components/month/October";
+import November from "../../components/month/November";
+import December from "../../components/month/December";
 import classes from "./PowerContentsBox.module.css";
 
 const PowerContentsBox = () => {

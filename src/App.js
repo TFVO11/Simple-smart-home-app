@@ -2,8 +2,8 @@ import { Fragment } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from "./components/Header/Header";
-import KitchenContentsBox from "./components/contents/KitchenContentsBox";
-import PowerContentsBox from "./components/contents/PowerContentsBox";
+import KitchenContentsBox from "./pages/KitchenContentsBox/KitchenContentsBox";
+import PowerContentsBox from "./pages/PowerContentsBox/PowerContentsBox";
 
 const App = () => {
     return (
