@@ -2,8 +2,9 @@ import { Fragment } from "react";
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 
-import DropDown from "../UI/Dropdown";
+import DropDown from "../../components/UI/Dropdown";
 import classes from './Header.module.css';
+
 
 const Header = () => {
     const [visibility, setVisibility] = useState(false);
