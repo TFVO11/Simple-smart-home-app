@@ -5,8 +5,6 @@ import Header from '../src/layouts/Header/Header.js'
 import KitchenContentsBox from "../src/pages/KitchenContentsBox";
 import PowerContentsBox from "../src/pages/PowerContentsBox";
 
-
-
 const App = () => {
     return (
         <Fragment>
@@ -21,7 +19,6 @@ const App = () => {
             </div>
         </Fragment>
     )
-
 };
 
 export default App;

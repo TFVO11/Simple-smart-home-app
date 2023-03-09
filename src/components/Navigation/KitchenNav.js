@@ -1,6 +1,7 @@
 import Wrapper from "../../layouts/ContentLayout/Wrapper.js";
 import classes from './KitchenNav.module.css'
 
+
 const dummyKitchenNavItem = [
     {
         id : "temperature",
@@ -31,7 +32,5 @@ const KitchenNav = () => {
             })}
         </Wrapper>
     )
-
-}
 
 export default KitchenNav;
