@@ -1,38 +1,71 @@
-import Wrapper from "../../layouts/ContentLayout/Wrapper";
+import Wrapper from "../../layouts/ContentLayout/Wrapper.js";
 
-const powerNavItems = [
-    {
-        id: "january",
-        label: "January",
-    },
-    {
-        id: "feburary",
-        label: "Feburary",
-    },
-    {
-        id: "march",
-        label: "March",
-    },
-    {
-        id: "april",
-        label: "April",
-    },
-];
+    const dummyPowerNavItem = [
+        {
+            id : "january",
+            label : "January"
+        },
+        {
+            id : "febuary",
+            label : "Febuary"
+        },
+        {
+            id : "may",
+            label : "May"
+        },
+        {
+            id : "aprill",
+            label : "Aprill"
+        },
+        {
+            id : "march",
+            label : "March"
+        },
+        {
+            id : "june",
+            label : "June"
+        },
+        {
+            id : "july",
+            label : "July"
+        },
+        {
+            id : "august",
+            label : "August"
+        },
+        {
+            id : "september",
+            label : "September"
+        },
+        {
+            id : "november",
+            label : "November"
+        },
+        {
+            id : "october",
+            label : "October"
+        },
+        {
+            id : "december",
+            label : "December"
+        },
+    ]
 
-const MonthlyElectricityUsageNav = () => {
-    return (
+const PowerNav = () => {
+    return(
         <Wrapper>
-            {powerNavItems.map((item) => {
+            {dummyPowerNavItem.map((item) => {
                 return (
                     <div>
                         <a href={`/PowerContentsBox/${item.id}`}>
                             {item.label}
                         </a>
                     </div>
-                );
-            })}
+                )
+            }
+            )}
         </Wrapper>
-    );
-};
+    )
+}
 
-export default MonthlyElectricityUsageNav;
+export default PowerNav;

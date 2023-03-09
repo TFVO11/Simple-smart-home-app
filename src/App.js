@@ -1,9 +1,9 @@
 import { Fragment } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
-import Header from "./layouts/Header/Header";
-import KitchenContentsBox from "./pages/KitchenContentsBox/KitchenContentsBox";
-import PowerContentsBox from "./pages/PowerContentsBox/PowerContentsBox";
+import Header from '../src/layouts/Header/Header.js'
+import KitchenContentsBox from "../src/pages/KitchenContentsBox";
+import PowerContentsBox from "../src/pages/PowerContentsBox";
 
 const App = () => {
     return (
@@ -13,19 +13,12 @@ const App = () => {
             </div>
             <div>
                 <Switch>
-                    <Route
-                        exact
-                        path="/KitchenContentsBox/*"
-                        component={KitchenContentsBox}
-                    ></Route>
-                    <Route
-                        path="/PowerContentsBox"
-                        component={PowerContentsBox}
-                    ></Route>
+                    <Route path='/KitchenContentsBox/*' component={KitchenContentsBox}></Route>
+                    <Route path='/PowerContentsBox/*' component={PowerContentsBox}></Route>
                 </Switch>
             </div>
         </Fragment>
-    );
+    )
 };
 
 export default App;
