@@ -32,5 +32,5 @@ const KitchenNav = () => {
             })}
         </Wrapper>
     )
-
+        }
 export default KitchenNav;
