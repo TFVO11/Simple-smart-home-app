@@ -1,6 +1,6 @@
 import { Switch, Route } from 'react-router-dom';
 
-import KitchenContents from './KitchenContents/KitchenContents.js';
+import KitchenContents from './KitchenContentsBox/KitchenContents/KitchenContents.js';
 import KitchenNav from '../components/Navigation/KitchenNav';
 import classes from './KitchenContentsBox.module.css';
 
