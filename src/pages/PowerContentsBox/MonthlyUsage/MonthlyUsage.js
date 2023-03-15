@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 
+import MonthlyUsageChart from "../MonthlyUsageChart/MonthlyUsageChart";
+
 const dummyMonthlyUsageData = [
     {
         id : "january",
@@ -98,6 +100,9 @@ const MonthlyUsage = () => {
             <div>{monthlyUsage.label} Power</div>
             <div>
                 <p>{monthlyUsage.startedWatts} Kw - {monthlyUsage.endedWatts} Kw = {monthlyUsage.usageWatts} Kw</p>
+            </div>
+            <div>
+                <MonthlyUsageChart />
             </div>
         </div>
         
